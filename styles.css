@@ -55,7 +55,8 @@ body {
   transition: all 0.5s;
 }
 a:hover,
-a:focus {
+a:focus,
+a:active {
   color: black;
 }
 .menu span {
@@ -72,7 +73,8 @@ a:focus {
 }
 
 a:hover span,
-a:focus span {
+a:focus span,
+a:active span {
   transform: scaleX(1);
 }
 
@@ -133,6 +135,10 @@ span:nth-child(9) {
 .light-bg {
   background-color: #636363;
 }
+
+.socials-bg {
+  padding-bottom: 4em;
+}
 .rotate-and-zoom-img-div {
   width: 80vw;
   height: 90vh;
@@ -152,11 +158,15 @@ span:nth-child(9) {
   margin-top: 8em;
 }
 
-.main-img:hover {
+.main-img:hover,
+.main-img:focus,
+.main-img:active {
   transform: scale(1.25) rotate(10deg);
 }
 
-.main-img:hover ~ .welcome-text {
+.main-img:hover ~ .welcome-text,
+.main-img:focus ~ .welcome-text,
+.main-img:active ~ .welcome-text {
   opacity: 0;
 }
 
@@ -217,15 +227,18 @@ span:nth-child(9) {
   transition-timing-function: ease-in-out;
   transition-duration: 1s;
   font-size: 1rem;
+  padding: 0.6em;
 }
 
-.table-container:hover .details-table {
+.table-container:hover .details-table,
+.table-container:focus .details-table,
+.table-container:active .details-table {
   height: 25%;
   font-size: 1.2rem;
 }
 
 .details-table th {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
 }
 
@@ -258,7 +271,8 @@ span:nth-child(9) {
 }
 
 .card:hover:before,
-.card:focus:before {
+.card:focus:before,
+.card:active:before {
   bottom: 0;
 }
 
@@ -269,7 +283,9 @@ span:nth-child(9) {
   transition: 0.5s;
 }
 
-.card:hover .content {
+.card:hover .content,
+.card:focus .content,
+.card:active .content {
   color: whitesmoke;
 }
 
@@ -313,7 +329,9 @@ span:nth-child(9) {
   transform: scaleX(0);
 }
 
-.box:hover:before {
+.box:hover:before,
+.box:focus:before,
+.box:active:before {
   transform: scaleX(1);
 }
 
@@ -331,7 +349,9 @@ span:nth-child(9) {
   transform: scaleY(0);
 }
 
-.box:hover:after {
+.box:hover:after,
+.box:focus:after,
+.box:active:after {
   transform: scaleY(1);
   transition-delay: 0.25s;
 }
@@ -360,7 +380,9 @@ span:nth-child(9) {
   transform: scaleX(0);
 }
 
-.box:hover .rotated:before {
+.box:hover .rotated:before,
+.box:focus .rotated:before,
+.box:active .rotated:before {
   transform: scaleX(1);
   transition-delay: 0.5s;
 }
@@ -379,7 +401,9 @@ span:nth-child(9) {
   transform: scaleY(0);
 }
 
-.box:hover .rotated:after {
+.box:hover .rotated:after,
+.box:focus .rotated:after,
+.box:active .rotated:after {
   transform: scaleY(1);
   transition-delay: 0.75s;
 }
@@ -412,7 +436,9 @@ span:nth-child(9) {
   transition: all 0.2s;
 }
 
-.icon:hover i {
+.icon:hover i,
+.icon:focus i,
+.icon:active i {
   transform: scale(1.3);
   color: #f1f1f1;
 }
@@ -428,7 +454,9 @@ span:nth-child(9) {
   transform: rotate(45deg);
 }
 
-.icon:hover:before {
+.icon:hover:before,
+.icon:focus:before,
+.icon:active:before {
   animation: animation 0.7s 1 forwards;
 }
 
@@ -455,13 +483,13 @@ span:nth-child(9) {
 }
 
 .animated-container-text {
-  width: 100%;
+  width: 80%;
   margin: 0;
   text-align: center;
   color: black;
   position: absolute;
   transform: translate(-50%, -50%);
-  font-size: 2rem;
+  font-size: 1.5rem;
   z-index: 1;
   font-weight: 700;
   letter-spacing: 1px;
@@ -598,7 +626,9 @@ span:nth-child(9) {
     display: none;
     border: 4px solid rgb(177, 177, 177);
   }
-  .box:hover .rotated {
+  .box:hover .rotated,
+  .box:focus .rotated,
+  .box:active .rotated {
     display: block;
     transition-delay: 0.5s;
     animation: rotated 2s infinite;
@@ -668,13 +698,17 @@ span:nth-child(9) {
     transition: 0.5s;
   }
 
-  .welcome-card:hover .welcome-card-img {
+  .welcome-card:hover .welcome-card-img,
+  .welcome-card:focus .welcome-card-img,
+  .welcome-card:active .welcome-card-img {
     height: 130%;
     left: 90%;
     bottom: -20%;
   }
 
-  .welcome-card:hover .welcome-card-content {
+  .welcome-card:hover .welcome-card-content,
+  .welcome-card:focus .welcome-card-content,
+  .welcome-card:active .welcome-card-content {
     left: 5%;
     opacity: 1;
   }
@@ -707,7 +741,9 @@ span:nth-child(9) {
     border: solid 2px whitesmoke;
     box-shadow: black 5px 5px 2px;
   }
-  .welcome-card-content a:hover {
+  .welcome-card-content a:hover,
+  .welcome-card-content a:focus,
+  .welcome-card-content a:active {
     background-color: #262626;
     padding: 10px 22px;
     color: white;
@@ -726,14 +762,16 @@ span:nth-child(9) {
     font-size: 2rem;
   }
 
-  .table-container:hover .details-table {
+  .table-container:hover .details-table,
+  .table-container:focus .details-table,
+  .table-container:active .details-table {
     height: 40%;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     background-color: #26262698;
   }
 
   .details-table th {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   /* section with spinning background divs */
