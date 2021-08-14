@@ -14,16 +14,19 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
+    <!-- <script>
       $(document).ready(function () {
         $(".hover").on("touchstart touchend", function (e) {
           $(this).toggleClass("hover_effect");
         });
       });
-    </script>
+    </script> -->
+
     <title>Document</title>
   </head>
   <body>
@@ -38,15 +41,15 @@
       </div>
     </nav>
     <div class="bg dark-bg">
-      <div class="rotate-and-zoom-img-div">
+      <div class="rotate-and-zoom-img-div main-img-wrapper">
         <img
-          class="main-img hover"
+          class="main-img main-img-transition"
           src="iphone-front-black-removebg-preview.png"
         />
         <h1 class="welcome-text">The New 2021 phone</h1>
       </div>
-      <div class="welcome-card hover">
-        <div class="welcome-card-content">
+      <div class="welcome-card">
+        <div class="welcome-card-content welcome-card-content-transition">
           <h2>Say "Hello" To The New 2021 phone</h2>
 
           <p>
@@ -58,14 +61,14 @@
           <a class="hover" href="#!">Pre-order Now!</a>
         </div>
         <img
-          class="welcome-card-img"
+          class="welcome-card-img welcome-card-img-transition"
           src="iphone-front-black-removebg-preview.png"
         />
       </div>
     </div>
-    <div class="bg-img">
-      <div class="card hover">
-        <div class="content">
+    <div class="bg-img card-wrapper">
+      <div class="card card-transition hover content-wrapper">
+        <div class="content content-transition">
           <p>Pre-order now to get yours at Christmas 2022.</p>
           <p>The world's best phone.</p>
           <p>
@@ -75,9 +78,19 @@
         </div>
       </div>
     </div>
-    <div class="bg medium-bg">
-      <div class="box hover">
+    <div class="bg medium-bg box-wrapper">
+      <div class="box box-transition">
         <span class="rotated"></span>
+        <h1>
+          Shiny<br />
+          <span>New</span><br />
+          Stylish <br />
+          Indestructable <br />
+          Modern
+        </h1>
+      </div>
+      <div class="box2 box2-transition">
+        <span class="rotated2"></span>
         <h1>
           Shiny<br />
           <span>New</span><br />
@@ -122,7 +135,7 @@
       <div class="animated-box"></div>
       <div class="animated-box"></div>
     </div>
-    <div class="table-container hover">
+    <div class="table-container .table-container-transition">
       <img class="table-img" src="phone-blurred-tipped-back.jpg" />
       <table class="details-table">
         <tr>
@@ -153,5 +166,6 @@
         </a>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
