@@ -16,12 +16,21 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".hover").on("touchstart touchend", function (e) {
+          e.preventDefault();
+          $(this).toggleClass("hover_effect");
+        });
+      });
+    </script>
     <title>Document</title>
   </head>
   <body>
     <nav class="nav">
       <div class="menu">
-        <a href="#!"
+        <a class="hover" href="#!"
           >PHONES <span></span>
           <span></span>
           <span></span>
@@ -31,10 +40,13 @@
     </nav>
     <div class="bg dark-bg">
       <div class="rotate-and-zoom-img-div">
-        <img class="main-img" src="iphone-front-black-removebg-preview.png" />
+        <img
+          class="main-img hover"
+          src="iphone-front-black-removebg-preview.png"
+        />
         <h1 class="welcome-text">The New 2021 phone</h1>
       </div>
-      <div class="welcome-card">
+      <div class="welcome-card hover">
         <div class="welcome-card-content">
           <h2>Say "Hello" To The New 2021 phone</h2>
 
@@ -44,7 +56,7 @@
             life. <br />Don't be a social outcast, anyone who is anyone is going
             to have this phone!
           </p>
-          <a href="#!">Pre-order Now!</a>
+          <a class="hover" href="#!">Pre-order Now!</a>
         </div>
         <img
           class="welcome-card-img"
@@ -53,7 +65,7 @@
       </div>
     </div>
     <div class="bg-img">
-      <div class="card">
+      <div class="card hover">
         <div class="content">
           <p>Pre-order now to get yours at Christmas 2022.</p>
           <p>The world's best phone.</p>
@@ -65,7 +77,7 @@
       </div>
     </div>
     <div class="bg medium-bg">
-      <div class="box">
+      <div class="box hover">
         <span class="rotated"></span>
         <h1>
           Shiny<br />
@@ -78,19 +90,19 @@
     </div>
     <div class="bg dark-bg socials-bg">
       <div class="container">
-        <a href="#!" class="icon">
+        <a href="#!" class="icon hover">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="#!" class="icon">
+        <a href="#!" class="icon hover">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="#!" class="icon">
+        <a href="#!" class="icon hover">
           <i class="fab fa-google"></i>
         </a>
-        <a href="#!" class="icon">
+        <a href="#!" class="icon hover">
           <i class="fab fa-youtube"></i>
         </a>
-        <a href="#!" class="icon">
+        <a href="#!" class="icon hover">
           <i class="fab fa-instagram"></i>
         </a>
       </div>
@@ -111,7 +123,7 @@
       <div class="animated-box"></div>
       <div class="animated-box"></div>
     </div>
-    <div class="table-container">
+    <div class="table-container hover">
       <img class="table-img" src="phone-blurred-tipped-back.jpg" />
       <table class="details-table">
         <tr>
@@ -130,7 +142,7 @@
     </div>
     <footer class="footer">
       <div class="menu">
-        <a href="#!"
+        <a class="hover" href="#!"
           >Copyright 2021 <span></span>
           <span></span>
           <span></span>
@@ -142,9 +154,5 @@
         </a>
       </div>
     </footer>
-
-    <script>
-      $("body").on("touchstart", function () {});
-    </script>
   </body>
 </html>

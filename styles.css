@@ -9,6 +9,11 @@ body {
   background-color: #262626;
 }
 
+.hover {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
 /* NAVBAR */
 .nav,
 .footer {
@@ -55,6 +60,7 @@ body {
   transition: all 0.5s;
 }
 a:hover,
+a.hover_effect,
 a:focus,
 a:active {
   color: black;
@@ -73,6 +79,7 @@ a:active {
 }
 
 a:hover span,
+a.hover_effect span,
 a:focus span,
 a:active span {
   transform: scaleX(1);
@@ -159,12 +166,14 @@ span:nth-child(9) {
 }
 
 .main-img:hover,
+.main-img.hover_effect,
 .main-img:focus,
 .main-img:active {
   transform: scale(1.25) rotate(10deg);
 }
 
 .main-img:hover ~ .welcome-text,
+.main-img.hover_effect ~ .welcome-text,
 .main-img:focus ~ .welcome-text,
 .main-img:active ~ .welcome-text {
   opacity: 0;
@@ -231,6 +240,7 @@ span:nth-child(9) {
 }
 
 .table-container:hover .details-table,
+.table-container.hover_effect .details-table,
 .table-container:focus .details-table,
 .table-container:active .details-table {
   height: 25%;
@@ -271,6 +281,7 @@ span:nth-child(9) {
 }
 
 .card:hover:before,
+.card.hover_effect,
 .card:focus:before,
 .card:active:before {
   bottom: 0;
@@ -284,6 +295,7 @@ span:nth-child(9) {
 }
 
 .card:hover .content,
+.card.hover_effect .content,
 .card:focus .content,
 .card:active .content {
   color: whitesmoke;
@@ -330,6 +342,7 @@ span:nth-child(9) {
 }
 
 .box:hover:before,
+.box.hover_effect:before,
 .box:focus:before,
 .box:active:before {
   transform: scaleX(1);
@@ -350,6 +363,7 @@ span:nth-child(9) {
 }
 
 .box:hover:after,
+.box.hover_effect:after,
 .box:focus:after,
 .box:active:after {
   transform: scaleY(1);
@@ -381,6 +395,7 @@ span:nth-child(9) {
 }
 
 .box:hover .rotated:before,
+.box.hover_effect .rotated:before,
 .box:focus .rotated:before,
 .box:active .rotated:before {
   transform: scaleX(1);
@@ -402,6 +417,7 @@ span:nth-child(9) {
 }
 
 .box:hover .rotated:after,
+.box.hover_effect .rotated:after,
 .box:focus .rotated:after,
 .box:active .rotated:after {
   transform: scaleY(1);
@@ -437,6 +453,7 @@ span:nth-child(9) {
 }
 
 .icon:hover i,
+.icon.hover_effect i,
 .icon:focus i,
 .icon:active i {
   transform: scale(1.3);
@@ -455,6 +472,7 @@ span:nth-child(9) {
 }
 
 .icon:hover:before,
+.icon.hover_effect:before,
 .icon:focus:before,
 .icon:active:before {
   animation: animation 0.7s 1 forwards;
@@ -627,6 +645,7 @@ span:nth-child(9) {
     border: 4px solid rgb(177, 177, 177);
   }
   .box:hover .rotated,
+  .box.hover_effect .rotated,
   .box:focus .rotated,
   .box:active .rotated {
     display: block;
@@ -699,6 +718,7 @@ span:nth-child(9) {
   }
 
   .welcome-card:hover .welcome-card-img,
+  .welcome-card.hover_effect .welcome-card-img,
   .welcome-card:focus .welcome-card-img,
   .welcome-card:active .welcome-card-img {
     height: 130%;
@@ -707,6 +727,7 @@ span:nth-child(9) {
   }
 
   .welcome-card:hover .welcome-card-content,
+  .welcome-card.hover_effect .welcome-card-content,
   .welcome-card:focus .welcome-card-content,
   .welcome-card:active .welcome-card-content {
     left: 5%;
@@ -742,6 +763,7 @@ span:nth-child(9) {
     box-shadow: black 5px 5px 2px;
   }
   .welcome-card-content a:hover,
+  .welcome-card-content a.hover_effect,
   .welcome-card-content a:focus,
   .welcome-card-content a:active {
     background-color: #262626;
@@ -763,6 +785,7 @@ span:nth-child(9) {
   }
 
   .table-container:hover .details-table,
+  .table-container.hover_effect .details-table,
   .table-container:focus .details-table,
   .table-container:active .details-table {
     height: 40%;
