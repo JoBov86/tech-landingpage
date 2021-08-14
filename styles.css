@@ -303,6 +303,10 @@ span:nth-child(9) {
   font-size: 0.9rem;
 }
 
+.content p {
+  font-size: 0.5rem;
+}
+
 .card:hover .content,
 .card.hover_effect .content,
 .card:focus .content,
